@@ -1,0 +1,95 @@
+body{
+    background-image: url('../image/background/IMG_4853.PNG');
+    background-repeat: no-repeat;
+    background-color: #f2ddc0;
+    background-size: 100%;
+    font-family: SofiaSans;
+  }
+
+@font-face {
+    font-family: SofiaSans ;
+    src: url(../fonts/SofiaSansExtraCondensed-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Oblako ;
+    src: url(../fonts/RubikPuddles-Regular.ttf);
+}
+
+
+h1{
+    font-family: Oblako;
+    font-size: 350%;
+    color: rgb(172, 126, 62);
+    -webkit-text-stroke: 3% ;
+}
+
+
+
+
+
+button{cursor: pointer;}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+    .formCreate {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #eab47a;
+      border-radius: 5px;
+      background: rgb(230, 199, 156);  ;
+    }
+    
+    .formCreate input[type="text"],
+    .formCreate textarea,
+    .formCreate input[type="file"],
+    .formCreate input[type="submit"] ,
+    .formCreate select{
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #d1aa80;
+      border-radius: 3px;
+      box-sizing: border-box; 
+      font-size: 110%;
+    }
+    
+    .formCreate input[type="submit"] {
+      background-color: #9c5912;
+      color: white;
+      cursor: pointer;
+      border-radius: 10px;
+      font-size: 100%;
+    }
+    
+    .formCreate input[type="submit"]:hover {
+      background-color: #c58745;
+    }
+
+    /* GRID */ 
+.grid{
+    display: grid;
+    justify-content: center;
+    grid: repeat(2, 75px) / repeat(20, 75px);
+
+    grid-template-areas:
+        "header header "
+        "menu"
+
+}
+
+.header{
+    grid-area: header;
+    grid-area: 1 / 2/ 1 / 19;
+}
+
+.menu{
+    grid-area: menu;
+    grid-area: 2 / 1 / 1 / 10;
+}

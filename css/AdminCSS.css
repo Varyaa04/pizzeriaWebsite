@@ -1,0 +1,67 @@
+body{
+  background-image: url('../image/background/IMG_4853.PNG');
+  background-repeat: no-repeat;
+  background-color: #f2ddc0;
+  background-size: 100%;
+  font-family: SofiaSans;
+}
+
+@font-face {
+  font-family: SofiaSans ;
+  src: url(../fonts/SofiaSansExtraCondensed-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Oblako ;
+  src: url(../fonts/RubikPuddles-Regular.ttf);
+}
+
+@font-face {
+  font-family: Pacifico ;
+  src: url(../fonts/Pacifico-Regular.ttf);
+}
+
+h1{
+  font-family: Oblako;
+  font-size: 350%;
+  color: rgb(172, 126, 62);
+  -webkit-text-stroke: 3% ;
+}
+
+.FlexCreate{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+justify-content: center;}
+
+
+
+  /* GRID */
+.grid{
+  display: grid;
+  justify-content: center;
+  grid: repeat(2, 75px) / repeat(20, 75px);
+
+  grid-template-areas:
+      "menu header "
+}
+
+.header{
+  grid-area: header;
+  grid-area: 1 / 9/ 1 / 19;
+}
+
+.menu{
+  grid-area: menu;
+  grid-area: 1 / 1 / 1 / 10;
+}
+
+.cr{
+  border: solid #723d25;
+  border-radius: 20px;
+  background: #9c5912;
+  color: wheat;
+  font-size: 110%;
+  text-decoration: none;
+}
+

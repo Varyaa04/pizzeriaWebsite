@@ -1,0 +1,69 @@
+/* DROPBOX */
+.dropbtn {
+    background-color: #737a80;
+    color: rgb(254, 89, 0);
+    -webkit-text-stroke: 0.1px ;
+    -webkit-text-stroke-color: rgb(255, 5, 5);
+    padding: 16px;
+    font-size: 150%;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+  height: 100%;
+  border-radius: 150px 150px 20px 20px;}
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #6f757a;}
+  
+  .menu {
+    position: relative;
+    display: inline-block;}
+  
+  .dropdown-content {
+    display: flex;
+    flex-direction: row;}
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;}
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;}
+  .show {display:block;}
+  
+  .buttonDropbox{
+    border-radius: 4px;
+    background-color: #605c5a;
+    border: none;
+    color: #f52020;
+    text-align: center;
+    font-size: 100%;
+    padding: 2%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;}
+  
+  .buttonDropbox span.menu1 {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;}
+  
+  .buttonDropbox span.menu1:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;}
+  
+  .buttonDropbox:hover span.menu1 {
+    padding-right: 25px;}
+  
+  .buttonDropbox:hover span.menu1:after {
+    opacity: 1;
+    right: 0;}
+  
+  

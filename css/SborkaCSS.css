@@ -1,0 +1,233 @@
+body{
+    background-image: url('../image/background/IMG_3939.PNG');
+    background-size: 100%;
+    overflow: hidden;
+    font-family: SofiaSans;
+}
+
+@font-face {
+    font-family: SofiaSans ;
+    src: url(../fonts/SofiaSansExtraCondensed-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Oblako ;
+    src: url(../fonts/RubikPuddles-Regular.ttf);
+}
+
+@font-face {
+    font-family: Pacifico ;
+    src: url(../fonts/Pacifico-Regular.ttf);
+}
+
+h1{
+    font-family: Oblako;
+    font-size: 350%;
+    color: rgb(172, 126, 62);
+    -webkit-text-stroke: 3% ;
+}
+
+
+label{
+    font-size: 103%;
+    font-family: Pacifico ;
+    margin-top: -2%;
+    color: #3e1703;
+}
+
+.vubor9{
+    margin-top: -3%;
+}
+.vubor2,.vubor4,.vubor6,.vubor8{
+    margin-left: -2%;
+}
+
+button{cursor: pointer;}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.price{
+    font-size: 350%;
+    color: #5c3826;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: #5b3c2d;
+}
+button.basket, button.korzina, button.rem{
+    color: #eabb94;
+    background-color: #9c5912;
+    border:2px solid;
+    border-color: #cf8845;
+    border-radius: 20px ;
+    font-size: 250%;
+    font-family: SofiaSans;
+}
+
+
+/* DROPDOWN */
+.dropbtn {
+    background-color: #737a80;
+    color: rgb(254, 89, 0);
+    -webkit-text-stroke: 0.1px ;
+    -webkit-text-stroke-color: rgb(255, 5, 5);
+    padding: 16px;
+    font-size: 150%;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+  height: 100%;
+  border-radius: 150px 150px 20px 20px;}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #6f757a;}
+
+.menu {
+    position: relative;
+    display: inline-block;}
+
+.dropdown-content {
+    display: flex;
+    flex-direction: row;}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;}
+.dropdown-content a:hover {background-color: #ddd}
+.show {display:block;}
+
+.buttonDropbox{
+    border-radius: 4px;
+    background-color: #605c5a;
+    border: none;
+    color: #f52020;
+    text-align: center;
+    font-size: 100%;
+    padding: 2%;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;}
+  
+  .buttonDropbox span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;}
+  
+  .buttonDropbox span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;}
+ 
+  .buttonDropbox:hover span {
+    padding-right: 25px;}
+  
+  .buttonDropbox:hover span:after {
+    opacity: 1;
+    right: 0;}
+
+
+
+    /* GRID */
+.grid{
+    display: grid;
+    justify-content: center;
+    grid: repeat(45, 75px) / repeat(20, 75px);
+
+    grid-template-areas:
+        "header header "
+        "menu pizza nachinka nachinka"
+        "sum vubor1 vubor2 "
+        "vubor3 vubor4 "
+        "vubor5 vubor6 "
+        "vubor7 vubor8 "
+        "vubor9  removeall"
+        ""
+        "total basket "
+        "addk  "
+}
+
+
+.header{
+    grid-area: header;
+    grid-area: 1 / 2/ 1 / 19;
+}
+
+.menu{
+    grid-area: menu;
+    grid-area: 2 / 1 / 1 / 10;
+}
+.sum{
+    grid-area: sum;
+    grid-area: 5/17/10/2;
+}
+.total{
+    grid-area: total;
+    grid-area: 5/17/10/21;
+}
+.basket{
+    grid-area: basket;
+    grid-area: 6/17/10/21;;
+}
+
+
+.nachinka{
+    grid-area: nachinka;
+    grid-area: 2 / 6 / 2/ 21;
+}
+.vubor{
+    grid-area: vubor;
+    grid-area: 10/5/2/21;
+}
+.vubor1{
+    grid-area: vubor1;
+    grid-area: 10/1/4/10;
+}
+.vubor2{
+    grid-area: vubor2;
+    grid-area: 10/3/4/10;
+}
+.vubor3{
+    grid-area: vubor3;
+    grid-area: 10/1/5/10;
+}
+.vubor4{
+    grid-area: vubor4;
+    grid-area: 10/3/5/10;
+}
+.vubor5{
+    grid-area: vubor5;
+    grid-area: 10/1/6/10;
+}
+.vubor6{
+    grid-area: vubor6;
+    grid-area: 10/3/6/10;
+}
+.vubor7{
+    grid-area: vubor7;
+    grid-area: 10/1/7/10;
+}
+.vubor8{
+    grid-area: vubor8;
+    grid-area: 10/3/7/10;
+}
+.vubor9{
+    grid-area: vubor9;
+    grid-area: 10/2/8/10;
+}
+.removeall{
+    grid-area: removeall;
+    grid-area: 10/1/9/10;
+
+}
+

@@ -1,0 +1,242 @@
+body{
+    background-image: url('../image/background/IMG_4852.PNG');
+    background-repeat: no-repeat;
+    background-color: #f2ddc0;
+    background-size: 100%;
+    font-family: SofiaSans;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    line-height: 1.2;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+  
+  @font-face {
+    font-family: SofiaSans ;
+    src: url(../fonts/SofiaSansExtraCondensed-Italic-VariableFont_wght.ttf);
+  }
+  
+  @font-face {
+    font-family: Oblako ;
+    src: url(../fonts/RubikPuddles-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: Pacifico ;
+    src: url(../fonts/Pacifico-Regular.ttf);
+  }
+  
+  h1{
+    font-family: Oblako;
+    font-size: 250%;
+    color: rgb(172, 126, 62);
+    -webkit-text-stroke: 3% ;
+  }
+  button{cursor: pointer;}
+  
+  .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 4%;
+  }
+  
+ button.korzina{
+    color: #eabb94;
+    background-color: #9c5912;
+    border:2px solid;
+    border-color: #cf8845;
+    border-radius: 20px ;
+    font-size: 250%;
+    font-family: SofiaSans;
+  }
+
+ 
+  /* ФОРМА ОБРАТНОЙ СВЯЗИ */
+  input,
+  textarea {
+    box-sizing: border-box;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 20px;
+  }
+  
+  .content {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between; 
+    background: rgb(230, 199, 156);
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 8px 0 rgba(39, 19, 6, 0.2)
+  }
+  
+  .left-side {  
+    width: 25%; 
+    height: 100%; 
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .left-side::before {
+    content: ""; 
+    position: absolute; 
+    height: 70%; 
+    width: 2px; 
+    background: #876709;
+    right: -15px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+  }
+  
+  .right-side {
+    width: 75%; 
+    margin-left: 75px;
+  }
+  
+  .details {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .details i {
+    font-size: 25px;
+    color: rgb(205, 157, 74);
+    margin-bottom: 10px;
+  }
+  
+  .topic {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 7px;
+  }
+  
+  .text-one{
+    font-size: 14px;
+    color: rgb(109, 80, 28);
+  }
+  
+  .topic-text {
+    font-size: 23px;
+    font-weight: 600;
+    color: #6b521d;
+    margin-bottom: 10px;
+  }
+  
+  .right-side p {
+    margin-bottom: 20px;
+  }
+  
+  .input-box {
+    height: 60px; 
+    width: 100%;
+    margin-bottom: 20px; 
+  }
+  
+  .input-box input,
+  .input-box textarea {
+    height: 100%; 
+    width: 90%;
+    border: none; 
+    border-radius: 5px; 
+    background: #f0f1f8; 
+    padding: 0 20px;
+  }
+  
+  .input-box textarea {
+    resize: none; 
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .message-box {
+    min-height: 30px;
+    overflow: hidden;
+  }
+  
+  .button {
+    display: inline-block; 
+  }
+  
+  button.submit{
+    color: #fff;
+    font-size: 18px;
+    background: #472808;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+    transition: 0.2s; 
+  }
+  
+  button.submit:hover {
+    background: #613b15;;
+  }
+  
+  
+  
+  @media (max-width: 800px) {
+      .content {
+        height: 100%;
+        flex-direction: column-reverse; 
+      }
+    
+      .left-side {
+        margin-top: 50px;
+        flex-direction: row; 
+        width: 100%; 
+        justify-content: center;
+        flex-wrap: wrap; 
+      }
+      .details {
+        margin-right: 20px;
+      }
+      .details:last-child {
+        margin-right: 0;
+      }
+    
+      .left-side::before {
+        display: none;
+      }
+  
+      .right-side {
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+
+.grid{
+    display: grid;
+    justify-content: center;
+    grid: repeat(20, 75px) / repeat(24, 75px);
+  
+}
+      
+ 
+.menu{
+  grid-area: menu;
+  grid-area: 1 / 3/ 1/11;
+} 
+     
+.header{
+  grid-area: header;
+  grid-area: 1/4/2/21;
+}
+
+.korzina{
+  grid-area: korzina;
+  grid-area: 1/21/2/24;
+}
+
+.container{
+    grid-area: container;
+    grid-area: 3/6/21/21;
+} 
+

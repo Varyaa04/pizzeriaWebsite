@@ -1,0 +1,57 @@
+body{
+    background-image: url('../image/background/IMG_4852.PNG');
+    background-repeat: no-repeat;
+    background-color: #f2ddc0;
+    background-size: 100%;
+    font-family: SofiaSans;
+    overflow: hidden;
+  }
+  
+  @font-face {
+    font-family: SofiaSans ;
+    src: url(../fonts/SofiaSansExtraCondensed-Italic-VariableFont_wght.ttf);
+  }
+  
+  @font-face {
+    font-family: Oblako ;
+    src: url(../fonts/RubikPuddles-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: Pacifico ;
+    src: url(../fonts/Pacifico-Regular.ttf);
+  }
+
+
+h2{
+  color: blueviolet;
+}
+
+.inKorzina{
+  margin-top: -10%;
+  margin-right: 40%;
+}
+
+button.korzina{
+  color: #eabb94;
+  background-color: #9c5912;
+  border:2px solid;
+  border-color: #cf8845;
+  border-radius: 20px ;
+  font-size: 250%;
+  font-family: SofiaSans;
+}
+
+.grid{
+  display: grid;
+  justify-content: center;
+  grid: repeat(3, 75px) / repeat(20, 75px);
+}
+
+.menu{
+  grid-area: menu;
+  grid-area: 2 / 1 / 1 / 10;
+}
+.korzina{
+  grid-area: 2/19/1/21;;
+}

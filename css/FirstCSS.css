@@ -1,0 +1,244 @@
+body{
+    background-image: url('../image/background/bk1.PNG');
+    background-size: 105%;
+      font-family: SofiaSansExtraCondensed;
+      color: #f5dac6;
+      overflow: hidden;
+      background-attachment: fixed;
+  }
+  
+  @font-face {
+      font-family: SofiaSansExtraCondensed;
+      src: url(../fonts/SofiaSansExtraCondensed-Italic-VariableFont_wght.ttf);
+      font-family: RubikPuddles;
+      src: url(../fonts/RubikPuddles-Regular.ttf);
+      font-family: Pacifico ;
+      src: url(../fonts/Pacifico-Regular.ttf);
+  }
+  
+  .loginButton {
+    width: 150px;
+    height: 150px; 
+    border: none;
+    background-image: url(../image/pizza/dough.PNG);
+    background-color: transparent;
+    background-size: cover;
+    cursor: pointer;
+    color: #623619;
+    font-weight: bold;
+  }
+  
+  .btntxt{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: space-between;
+  }
+  
+  body::after {
+    
+    z-index: 2;
+  }
+  
+  button{
+     font-family:SofiaSansExtraCondensed;
+     font-size: 30px;
+     color: #572606;
+  }
+  
+  h1{
+    font-family: Pacifico;
+    font-size: 800%;
+    margin-top: 2%;
+    margin-left: 20%;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #6b4f2e;
+  }
+  
+  h3{
+    font-family: SofiaSansExtraCondensed;
+    font-size: 450%;
+    margin-top: 10%;
+    margin-left: 10%;
+  }
+  
+  .hi{
+      display: flex;
+      flex-direction: column;
+  }
+   h2{
+    font-family: Pacifico;
+      font-size: 200% ;
+      -webkit-text-stroke: 0.5px;
+      color: #f5dac6;
+      -webkit-text-stroke-color: #6b4f2e;
+      margin-top: -3%;
+   }
+  
+   .buttons{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      margin-top: -1%;
+    }
+
+  
+ 
+ 
+  
+  .floating-button {
+      text-decoration: none;
+      display: inline-block;
+      width: 240px;
+      height: 100px;
+      line-height: 95px;
+      border-radius: 45px;
+      margin: 10px 80px;
+      font-size: 130%;
+      font-weight:50px;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: 3px;
+      font-weight: 600;
+      color: #f5dac6;
+      background: #980a0a;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+      transition: .3s;
+    }
+    .floating-button:hover {
+      background: #cc3f3f;
+      box-shadow: 0 15px 20px rgb(130, 0, 0);
+      color: white;
+      transform: translateY(-7px);
+    }
+    
+    .text{
+      font-family: SofiaSansExtraCondensed;
+      font-style: italic;
+      font-weight: bolder;
+      color: #073450;
+      font-size: 400%;
+    }
+  
+  a {
+      text-decoration: none;
+      color: white;
+     }
+  
+  
+   @media  (min-width:768px)and (max-width: 1023px)
+    {  /* планшеты */
+     body{
+      background-image: url('../image/background/bk2ch.PNG');
+      background-size: cover;
+     }
+     h1{
+      font-family: RubikPuddles;
+      font-size: 100px;
+    }
+     h2{
+      font-size: 200% ;
+      -webkit-text-stroke: 1px;
+      -webkit-text-stroke-color: black;
+       }
+  
+      .buttons{
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-end;
+      }
+  
+      .floating-button {
+          text-decoration: none;
+          display: inline-block;
+          width: 129px;
+          height: 73px;
+          line-height: 37px;
+          border-radius: 24;
+          margin: 10px 80px;
+          font-size: 130%;
+          font-weight:25;
+          text-transform: uppercase;
+          text-align: center;
+          letter-spacing: 3px;
+          font-weight: 600;
+          color: #45a5cf;
+          background: #980a0a;
+          box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+          transition: .3s;
+        }
+        .floating-button:hover {
+          background: #cc3f3f;
+          box-shadow: 0 15px 20px rgb(130, 0, 0);
+          color: white;
+          transform: translateY(-7px);
+        }
+        
+      a {
+          text-decoration: none;
+          color: white;
+         }
+      
+   }
+  
+  @media (max-width:727px) 
+  { /* телефоны */
+      body{
+          background-image: url('../image/background/bktel.PNG');
+          background-size: cover;
+          background-attachment: fixed;
+      }
+  
+      h1{
+        font-family: RubikPuddles;
+        font-size: 60px;
+      }
+  
+      h2{
+          font-size: 150% ;
+          -webkit-text-stroke: 1px;
+          -webkit-text-stroke-color: black;
+       }
+  
+      .buttons{
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: flex-start;
+          position: relative;
+      }
+  
+      .floating-button {
+          text-decoration: none;
+          display: inline-block;
+          width: 125px;
+          height: 70px;
+          line-height: 37px;
+          border-radius: 12;
+          margin: 10px 80px;
+          font-size: 130%;
+          font-weight:25;
+          text-transform: uppercase;
+          text-align: center;
+          letter-spacing: 3px;
+          font-weight: 600;
+          color: #45a5cf;
+          background: #980a0a;
+          box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+          transition: .3s;
+        }
+        .floating-button:hover {
+          background: #cc3f3f;
+          box-shadow: 0 15px 20px rgb(130, 0, 0);
+          color: white;
+          transform: translateY(-7px);
+        }
+        
+      a {
+          text-decoration: none;
+          color: white;
+         }
+  }
+  
